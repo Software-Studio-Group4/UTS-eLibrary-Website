@@ -1,0 +1,223 @@
+@import "global.css";
+
+html, body{
+	margin: 0;
+	padding: 0;
+    width: 100vw; 
+    height: 100vh;
+}
+
+#content{
+    position: absolute;
+    background-color:var(--background-blue);
+    top:10vh;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    height: 621px;
+    width: 1082px;
+    overflow: visible;
+}
+
+#section1{
+    right: 0;
+    left: 0;
+    /* visibility: hidden; */
+}
+
+#section2{
+    background-color:var(--main-yellow);
+    right: 0;
+    visibility:hidden;
+}
+
+#section3{
+    right: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+#section4{
+    left: 0;
+    background-color:var(--main-yellow);
+    visibility: hidden;
+}
+#section5{
+    right: 0;
+    visibility: hidden;
+}
+
+
+/*****************************************************************************
+* LOCAL CLASSES
+*******************************************************************************/
+
+.container{
+    position: absolute;
+    background-color: white; 
+    bottom:0;
+    top:0;
+    margin:auto;
+    height: 100%;
+    width: 50%;
+    filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.161));
+    overflow: hidden;
+}
+.subheadingTxt{
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    color: var(--darker-blue);
+    position: absolute;
+    font-size: 22.5px;
+    top: 10%;
+    right:0;
+    left:0;
+    margin:auto;
+    text-align: center;
+}
+
+/*****************************************************************************
+* SECTION 1
+*******************************************************************************/
+#line_1, #line_2{
+    stroke: var(--accent-red);
+}
+#swutImg{
+    position: absolute;
+    top: 17%;
+    right:0;
+    left:0;
+    width:auto;
+    margin:auto;
+}
+
+#emailTf{
+    bottom:40.5%;
+}
+#stulecSel{
+    bottom:28.5%;
+    width:74.5%;
+    cursor: pointer;
+}
+.registerInput{
+    position: absolute;
+    width: 70%;
+}
+#startedBtn{
+    bottom:13%;
+}
+.btns{
+    height: 9.5%;
+    width: 45%;
+}
+/*****************************************************************************
+* SECTION 2 
+*******************************************************************************/
+#line_3, #line_4{
+    stroke: white;
+}
+#aboutTxt{
+    color:white;
+}
+#aboutForms{
+    position:absolute;
+    width:100%;
+    height :50%;
+    top:20%;
+}
+#lastNameTf{
+    position: element('#firstNameTf');
+    transform: translateY(80px);
+}
+#stuNumberTf{
+    position: element('#firstNameTf');
+    transform: translateY(160px);
+}
+#contactTf{
+    position: element('#firstNameTf');
+    transform: translateY(240px);
+}
+#continueBtn{
+    background-color:white;
+    color:var(--darker-blue);
+    bottom:12%;
+}
+#continueBtn:hover{
+    background-color:var(--bright-red);
+    border-color:var(--bright-red);
+    color:white;
+    transition-duration: 0.2s;
+}
+/*****************************************************************************
+* SECTION 3 
+*******************************************************************************/
+#choosepwordTxt{
+    position: absolute;
+    color: var(--darker-blue);
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    top:34%;
+    left:8%;
+}
+#passwordPf{
+    top: 40%;
+}
+#passconfirmPf{
+    top: 40%;
+    transform: translateY(80px);
+}
+#passwordBlock{
+    position: absolute;
+    width:100%;
+    height:100%;
+    transform: translateY(-30px);
+}
+#confirmBtn{
+    bottom:28%;
+}
+/*****************************************************************************
+* SECTION 4 
+*******************************************************************************/
+#congrats{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(50px);
+}
+#congratsTxt{
+    color:white;
+    font-size:58px;
+    top:30%;
+}
+#sec4Txt{
+    color:white;
+    font-family:'Open Sans SemiBold';
+    font-weight: normal;
+    top:41.5%;
+}
+/*****************************************************************************
+* SECTION 5
+*******************************************************************************/
+#loginBlock{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-20px);
+}
+
+#loginTxt{
+    position: absolute;
+    top:34%;
+    transform: translateX(-60px);
+}
+#loginTf{
+    top: 40%;
+}
+#loginPf{
+    top: 40%;
+    transform: translateY(80px);
+}
+#loginBtn{
+    bottom:20%;
+}
