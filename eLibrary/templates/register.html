@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js" 
+        integrity="sha512-JO6JyFPJupQKZf7icgZkHwuq/rAQxH7COqvEd4WdK52AtHPedwHog05T69pIelI69jVN/zZbW6TuHfH2mS8j/Q==" 
+        crossorigin="anonymous"></script>
+        <script src="{% static 'js/register.js' %}"></script>
+        <link href = "{% static 'css/register.css' %}" rel ="stylesheet">
+        <link rel="icon" href="static/assets/swut icon blue.png">
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="content">
+                <!-- ----------------------------SECTION 1 -------------------->
+                <div id="section1" class="container">
+                    <svg class="dashedAccentsvg bottomline" id="line_1" viewBox = "0 0 1747 5">
+                        <path class="dashedAccentpath"  d="M 0 0 L 1747 0"></path>
+                    </svg>
+                    <svg class="dashedAccentsvg topline"  id="line_2" viewBox = "0 0 1747 5">
+                        <path class="dashedAccentpath" d="M 0 0 L 1747 0"></path>
+                    </svg>
+                    <span id="startTxt" class="subheadingTxt">Start Browsing SWUT eLibrary Today!</span>
+                    <img id="swutImg" src="static/assets/swut_icon_blue@2x.png">
+                    <input class="longInput registerInput" id="emailTf" name="email" placeholder="SWUT email">
+                    <select class="longInput registerInput" id="stulecSel">
+                        <option value="" disabled selected hidden color="#fff">I am a...</option>
+                        <option value="stu">Student</option>
+                        <option value="lect">Lecturer</option>
+                    </select>
+                    <button id="startedBtn" class="formBtn btns">Get Started!</button>
+                </div>
+
+                <!-- ----------------------------SECTION 2 -------------------->
+                <div id="section2" class="container">
+                    <svg class="dashedAccentsvg topline" id="line_3" viewBox = "0 0 1747 5">
+                        <path class="dashedAccentpath"  d="M 0 0 L 1747 0"></path>
+                    </svg>
+                    <svg class="dashedAccentsvg bottomline"  id="line_4" viewBox = "0 0 1747 5">
+                        <path class="dashedAccentpath" d="M 0 0 L 1747 0"></path>
+                    </svg>
+                    <span id="aboutTxt" class="subheadingTxt">About You</span>
+                    <div id= aboutForms>
+                        <input class="longInput registerInput" id="firstNameTf" name="firstName" placeholder="First Name">
+                        <input class="longInput registerInput" id="lastNameTf" name="lastName" placeholder="Last Name">
+                        <input class="longInput registerInput" id="stuNumberTf" name="uniNumber" placeholder="Student Number">
+                        <input class="longInput registerInput" id="contactTf" name="phoneNumber" placeholder="Contact Number">
+                    </div>
+                    <button class="formBtn btns" id="continueBtn">Continue</button>
+                </div>
+                <!-- ----------------------------SECTION 3 -------------------->
+                <div id="section3" class="container">
+                    <svg class="dashedAccentsvg bottomline" id="line_1" viewBox = "0 0 1747 5">
+                        <path class="dashedAccentpath"  d="M 0 0 L 1747 0"></path>
+                    </svg>
+                    <svg class="dashedAccentsvg topline"  id="line_2" viewBox = "0 0 1747 5">
+                        <path class="dashedAccentpath" d="M 0 0 L 1747 0"></path>
+                    </svg>
+                    <span id="almostTxt" class="subheadingTxt">Almost Done!</span>
+                    <div id= passwordBlock> 
+                        <span id="choosepwordTxt">Choose a Strong Password</span>
+                        <input type="password" class="longInput registerInput" id="passwordPf" name="password" placeholder="Password">
+                        <input type="password" class="longInput registerInput" id="passconfirmPf" name="password" placeholder="Confirm Password">
+                    </div>
+                    <button id="confirmBtn" class="formBtn btns">Confirm</button>
+                </div>
+                <!-- ----------------------------SECTION 4 -------------------->
+                <div id="section4" class="container">
+                    <svg class="dashedAccentsvg topline" id="line_3" viewBox = "0 0 1747 5">
+                        <path class="dashedAccentpath"  d="M 0 0 L 1747 0"></path>
+                    </svg>
+                    <svg class="dashedAccentsvg bottomline"  id="line_4" viewBox = "0 0 1747 5">
+                        <path class="dashedAccentpath" d="M 0 0 L 1747 0"></path>
+                    </svg>
+                    <div id="congrats">
+                        <span id="congratsTxt" class="subheadingTxt">Congratulations!</span>
+                        <span id="sec4Txt" class="subheadingTxt">you can now borrow ebooks!</span>    
+                    </div>
+                   </div>
+                <!-- ----------------------------SECTION 5 -------------------->
+                <div id="section5" class="container">
+                    <svg class="dashedAccentsvg bottomline" id="line_1" viewBox = "0 0 1747 5">
+                        <path class="dashedAccentpath"  d="M 0 0 L 1747 0"></path>
+                    </svg>
+                    <svg class="dashedAccentsvg topline"  id="line_2" viewBox = "0 0 1747 5">
+                        <path class="dashedAccentpath" d="M 0 0 L 1747 0"></path>
+                    </svg>
+                    <div id=loginBlock>
+                        <span id="loginTxt" class="subheadingTxt">Login to your new account</span>
+                        <input type="text" class="longInput registerInput" id="loginTf" name="email" placeholder="Email Address">           
+                        <input type="password" class="longInput registerInput" id="loginPf" name="password" placeholder="Password">    
+                    </div>
+                    <button id="loginBtn" class="formBtn btns">Sign In</button>
+                </div>
+            </div>
+        </div>
+        <div class="Header">
+            <img id="headerLogo" src="static/assets/header_logo.png">
+            <div id="headerbtns">
+                <button id="registerbtn" class="headerbtn" >REGISTER</button>
+                <button id="loginbtn" class="headerbtn">LOGIN</button>
+            </div>
+        </div>
+    </body>
+    </html>

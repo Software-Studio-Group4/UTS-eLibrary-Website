@@ -1,0 +1,138 @@
+@import "global.css";
+
+
+html, body{
+	margin: 0;
+	padding: 0;
+    width: 100vw; 
+    height: 100vh;
+}
+#container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+#loginForm{
+    position: absolute; 
+    background-color: white; 
+    top: 10vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    height: 555px; 
+    width: 736px; 
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.349));
+    overflow: hidden;
+}
+
+#line_1{
+    position: absolute; 
+    top: 5%;
+}
+#line_2{
+    position: absolute; 
+    bottom: 5%; 
+    
+}
+#signinTxt{
+    position: absolute;
+    top: 15%;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin:auto; 
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    font-size: 33px;
+    color: var(--darker-blue);
+}
+#form{
+    position:absolute;
+    background: none;
+    overflow:hidden;
+    top: 28%;
+    left:0;
+    right:0;
+    margin:auto;
+    height: 35%;
+    width: 70%; 
+}
+.longInput{
+    position:absolute;
+    width : 80%;
+    height :30%;
+    left:0;
+    right:0;
+    margin:auto;
+   
+}
+
+#username{
+    position:absolute;
+    top: 0;
+}
+#password{
+    position:absolute;
+    top: 45%;
+}
+#forgotalign{
+    position:absolute;
+    background: none;
+    width: 100%;
+    height: 18%;
+    bottom:0;
+    margin:auto;
+}
+.forgotalignTxt{
+    font-family: Open Sans;
+}
+#forgot{
+    position:absolute;
+    color: var(--accent-red);
+    text-decoration: none;
+    right: 8.5%;
+}
+#forgot:hover{
+    color: var(--accent-red-hover);
+    transition-duration: 0.2s;
+    text-decoration-line: underline;
+}
+#remembercheck{
+    position:absolute;
+    top: 6.5%;
+    transform: scale(1.25);
+
+}
+#rememberTxt{
+    position: absolute;
+    left: 5%;
+    top: 0;
+    color: var(--darker-blue);
+    outline-color: var(--darker-blue);
+}
+#rememberWrapper{
+    position: absolute;
+    width:100%;
+    height:100%;
+    left: 8.5%;
+}
+#signinBtn{
+    width: 30%;
+    height: 10%;
+    bottom:20%;
+
+}
+#signinBtn:hover{
+    background: var(--bright-red);
+    transform: translateY(3px);
+    filter: drop-shadow( rgba(48, 46, 71, 0.261));
+    transition-duration: 0.2s;
+}
+#line_1, #line_2{
+    stroke: var(--accent-red);
+}
+
+
